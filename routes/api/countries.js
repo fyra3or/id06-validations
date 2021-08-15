@@ -1,11 +1,8 @@
 'use strict'
 
-const personIdCountries = require('../../constants/countries')
+const countries = require('../../constants/countries')
 
 module.exports = async function (fastify, opts) {
-  // fastify.get('/countries', async function (request, reply) {
-  //   return { countries: personIdCountries }
-  // })
   fastify.route({
     method: 'GET',
     url: '/countries',
@@ -23,7 +20,7 @@ module.exports = async function (fastify, opts) {
                   name: { type: 'string' },
                   format: { type: 'string' },
                   description: { type: 'string' },
-                  example: { type: 'string' },
+                  examples: { type: 'array' },
                 }
               }
             },
@@ -33,7 +30,7 @@ module.exports = async function (fastify, opts) {
     },
     handler: async (request, reply) => {
       return {
-        countries: personIdCountries
+        countries
       }
     }
   })
