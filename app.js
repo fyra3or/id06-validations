@@ -2,9 +2,15 @@
 
 const path = require('path')
 const AutoLoad = require('fastify-autoload')
+const FastifyStatic = require('fastify-static')
 
 module.exports = async function (fastify, opts) {
   // Place here your custom code!
+
+  fastify.register(FastifyStatic, {
+    root: path.join(__dirname, 'public'),
+    //prefix: '/public/', // optional: default '/'
+  })
 
   // Do not touch the following lines
 
