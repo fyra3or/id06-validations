@@ -8,7 +8,7 @@ module.exports = fp(async function (fastify, opts) {
       throw new Error('personId and countryCode is required in validatePersonId')
     }
     const regexp = fastify.getPersonIdRegExp({ countryCode });
-    const isValid = regexp.exec(personId);
-    return isValid;
+    const matches = regexp.exec(personId);
+    return !!matches;
   })
 })

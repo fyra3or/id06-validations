@@ -20,7 +20,8 @@ module.exports = async function (fastify, opts) {
                   name: { type: 'string' },
                   format: { type: 'string' },
                   description: { type: 'string' },
-                  examples: { type: 'array' },
+                  validExamples: { type: 'array' },
+                  notValidExamples: { type: 'array' },
                 }
               }
             },

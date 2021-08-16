@@ -5,7 +5,7 @@ const personIdCountries = require('../../constants/countries')
 module.exports = async function (fastify, opts) {
   fastify.route({
     method: 'GET',
-    url: '/validatePersonId',
+    url: '/validate-person-id',
     schema: {
       querystring: {
         countryCode: { type: 'string' },
