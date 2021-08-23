@@ -1,5 +1,6 @@
 const defaultFormat = 'N/A';
-const defaultIdentifier = 'Document number from the passport';
+const defaultPassportIdentifier = 'Document number from the passport';
+const defaultPassportOrNationalIdIdentifier = 'Document number from the passport or national ID';
 const defaultExample = '123456789';
 
 const specification = [
@@ -8,7 +9,7 @@ const specification = [
     code: 'AT',
     name: 'Austria',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportOrNationalIdIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -18,7 +19,7 @@ const specification = [
     code: 'BE',
     name: 'Belgium',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -30,7 +31,10 @@ const specification = [
     format: 'YYMMDDNNNN',
     identifier: 'Edinen grazhdanski nomer',
     examples: {
-      valid: ['8901011111'],
+      valid: [
+        '8901011111',
+        '0001011111'
+      ],
       inValid: []
     }
   },
@@ -38,7 +42,7 @@ const specification = [
     code: 'CH',
     name: 'Switzerland',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -48,7 +52,7 @@ const specification = [
     code: 'CY',
     name: 'Cyprus',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportOrNationalIdIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -60,7 +64,12 @@ const specification = [
     format: 'YYNNDD/NNN or YYNNDD/NNNN',
     identifier: 'Rodné číslo',
     examples: {
-      valid: ['897701/111'],
+      valid: [
+        '897701/111',
+        '007701/111',
+        '897701/1111',
+        '007701/1111'
+      ],
       inValid: []
     }
   },
@@ -68,7 +77,7 @@ const specification = [
     code: 'DE',
     name: 'Germany',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportOrNationalIdIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -81,7 +90,7 @@ const specification = [
     identifier: 'Personnummer(CPR-nummer, det centrale personregister)',
     examples: {
       valid: ['111111-1111'],
-      inValid: []
+      inValid: ['1111111111']
     }
   },
   {
@@ -90,7 +99,10 @@ const specification = [
     format: 'NYYMMDDNNNN',
     identifier: 'Isikukood',
     examples: {
-      valid: ['18901011111'],
+      valid: [
+        '18901011111',
+        '10001011111'
+      ],
       inValid: []
     }
   },
@@ -98,7 +110,7 @@ const specification = [
     code: 'ES',
     name: 'Spain',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportOrNationalIdIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -110,15 +122,35 @@ const specification = [
     format: 'DDMMYYXNNNZ',
     identifier: 'Henkilötunnus/Personbeteckning',
     examples: {
-      valid: ['010189-111A'],
-      inValid: []
+      valid: [
+        '010189-111A',
+        '010189+111A',
+        '010189.111A',
+        '010189A111A',
+        '010100-111A',
+        '010100+111A',
+        '010100.111A',
+        '010100A111A',
+        '010189-1111',
+        '010189+1111',
+        '010189.1111',
+        '010189A1111',
+        '010100-1111',
+        '010100+1111',
+        '010100.1111',
+        '010100A1111'
+      ],
+      inValid: [
+        '010189111A',
+        '0101891111'
+      ]
     }
   },
   {
     code: 'FR',
     name: 'France',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -128,7 +160,7 @@ const specification = [
     code: 'GB',
     name: 'Great Britain',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -138,7 +170,7 @@ const specification = [
     code: 'GR',
     name: 'Greece',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -148,7 +180,7 @@ const specification = [
     code: 'HR',
     name: 'Croatia',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportOrNationalIdIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -158,7 +190,7 @@ const specification = [
     code: 'HU',
     name: 'Hungary',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportOrNationalIdIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -168,7 +200,7 @@ const specification = [
     code: 'IE',
     name: 'Ireland',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -180,15 +212,20 @@ const specification = [
     format: 'DDMMYY-NNNN',
     identifier: 'Kennitala',
     examples: {
-      valid: ['010189-1111'],
-      inValid: []
+      valid: [
+        '010189-1111',
+        '010100-1111'
+      ],
+      inValid: [
+        '0101891111'
+      ]
     }
   },
   {
     code: 'IT',
     name: 'Italy',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportOrNationalIdIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -198,7 +235,7 @@ const specification = [
     code: 'LI',
     name: 'Liechtenstein',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: 'No verifiable document at the moment',
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -210,7 +247,10 @@ const specification = [
     format: 'NYYMMDDNNNN',
     identifier: 'Asmens kodas',
     examples: {
-      valid: ['18901011111'],
+      valid: [
+        '18901011111',
+        '10001011111'
+      ],
       inValid: []
     }
   },
@@ -218,7 +258,7 @@ const specification = [
     code: 'LU',
     name: 'Luxembourg',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportOrNationalIdIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -227,11 +267,18 @@ const specification = [
   {
     code: 'LV',
     name: 'Latvia',
-    format: 'DDMMYY-NNNNN',
+    format: 'DDMMYY-NNNNN or 32NNNN-NNNNN',
     identifier: 'Personas kods',
     examples: {
-      valid: ['010189-11111'],
-      inValid: []
+      valid: [
+        '010189-11111',
+        '010100-11111',
+        '321111-11111'
+      ],
+      inValid: [
+        '01018911111',
+        '32111111111'
+      ]
     }
   },
   {
@@ -248,7 +295,7 @@ const specification = [
     code: 'NL',
     name: 'Netherlands',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -260,7 +307,10 @@ const specification = [
     format: 'DDMMYYNNNNN',
     identifier: 'Fødelsenummer',
     examples: {
-      valid: ['01018911111'],
+      valid: [
+        '01018911111',
+        '01010011111'
+      ],
       inValid: []
     }
   },
@@ -270,7 +320,10 @@ const specification = [
     format: 'YYNNDDNNNNN',
     identifier: 'Powszechny elektroniczny system ewidencji ludności',
     examples: {
-      valid: ['89770111111'],
+      valid: [
+        '89770111111',
+        '00770111111'
+      ],
       inValid: []
     }
   },
@@ -280,17 +333,24 @@ const specification = [
     format: 'NNNNNNN or NNNNNNNN or LLNNNNNNNN',
     identifier: 'Número de identificação civil',
     examples: {
-      valid: ['1111111'],
+      valid: [
+        '1111111',
+        '11111111',
+        'AA11111111'
+      ],
       inValid: []
     }
   },
   {
     code: 'RO',
     name: 'Romania',
-    format: 'YYMMDDNNNNNN',
+    format: 'NYYMMDDNNNNNN',
     identifier: 'Cod numeric personal',
     examples: {
-      valid: ['890101111111'],
+      valid: [
+        '1890101111111',
+        '1000101111111'
+      ],
       inValid: []
     }
   },
@@ -300,8 +360,15 @@ const specification = [
     format: 'YYYYMMDD-NNNN',
     identifier: 'Personnummer',
     examples: {
-      valid: ['19890101-1111'],
-      inValid: ['890101-1111']
+      valid: [
+        '19890101-1111',
+        '20000101-1111'
+      ],
+      inValid: [
+        '890101-1111',
+        '8901011111',
+        '198901011111',
+      ]
     }
   },
   {
@@ -310,7 +377,10 @@ const specification = [
     format: 'DDMMYYYNNNNNN',
     identifier: 'Enotna matična številka občana',
     examples: {
-      valid: ['0101989111111'],
+      valid: [
+        '0101989111111',
+        '0101000111111'
+      ],
       inValid: []
     }
   },
@@ -320,8 +390,16 @@ const specification = [
     format: 'YYNNDD/NNN or YYNNDD/NNNN',
     identifier: 'Rodné číslo',
     examples: {
-      valid: ['897701/111'],
-      inValid: []
+      valid: [
+        '897701/111',
+        '007701/111',
+        '897701/1111',
+        '007701/1111'
+      ],
+      inValid: [
+        '897701111',
+        '8977011111'
+      ]
     }
   },
 
@@ -330,7 +408,7 @@ const specification = [
     code: 'AE',
     name: 'United Arab Emirates',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -340,7 +418,7 @@ const specification = [
     code: 'AF',
     name: 'Afghanistan',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -370,7 +448,7 @@ const specification = [
     code: 'AU',
     name: 'Australia',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -379,10 +457,15 @@ const specification = [
   {
     code: 'AZ',
     name: 'Azerbaijan',
-    format: 'NLNLNLL or NNLLLLNL',
+    format: 'NLNLNLL, NNLLLLNL, NLLLLLN or NNLLLLN',
     identifier: 'Personal number',
     examples: {
-      valid: ['1A1A1AA'],
+      valid: [
+        '1A1A1AA',
+        '11AAAA1A',
+        '1AAAAA1',
+        '11AAAA1'
+      ],
       inValid: []
     }
   },
@@ -400,7 +483,7 @@ const specification = [
     code: 'BR',
     name: 'Brazil',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -420,7 +503,7 @@ const specification = [
     code: 'CA',
     name: 'Canada',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -430,7 +513,7 @@ const specification = [
     code: 'CI',
     name: 'Côte d\'Ivoire',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -440,7 +523,7 @@ const specification = [
     code: 'CL',
     name: 'Chile',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -450,7 +533,7 @@ const specification = [
     code: 'CM',
     name: 'Cameroon',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -460,7 +543,7 @@ const specification = [
     code: 'CN',
     name: 'China',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -469,10 +552,15 @@ const specification = [
   {
     code: 'CO',
     name: 'Colombia',
-    format: 'LLNNNNNNN, LLNNNNNNNN or LLNNNNNNNNN',
+    format: 'LLNNNNNNN, LLNNNNNNNN, LLNNNNNNNNN or LLNNNNNNNNNN',
     identifier: 'Personal number',
     examples: {
-      valid: ['AA11111111'],
+      valid: [
+        'AA1111111',
+        'AA11111111',
+        'AA111111111',
+        'AA1111111111'
+      ],
       inValid: []
     }
   },
@@ -480,7 +568,7 @@ const specification = [
     code: 'CR',
     name: 'Costa Rica',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -492,15 +580,24 @@ const specification = [
     format: 'NNNXNNNNNNNXN',
     identifier: 'Personal number',
     examples: {
-      valid: ['111-1111111-1'],
-      inValid: []
+      valid: [
+        '111-1111111-1',
+        '111+1111111+1',
+        '111.1111111.1',
+        '111A1111111A1'
+      ],
+      inValid: [
+        '11111111111',
+        '1111111111-1',
+        '111-11111111'
+      ]
     }
   },
   {
     code: 'DZ',
     name: 'Algeria',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -510,7 +607,7 @@ const specification = [
     code: 'EC',
     name: 'Ecuador',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -520,7 +617,7 @@ const specification = [
     code: 'EG',
     name: 'Egypt',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -540,7 +637,7 @@ const specification = [
     code: 'ET',
     name: 'Ethiopia',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -560,7 +657,7 @@ const specification = [
     code: 'GH',
     name: 'Ghana',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -582,15 +679,24 @@ const specification = [
     format: 'NXNNNNNNNXN',
     identifier: 'ID number',
     examples: {
-      valid: ['1-1111111-1'],
-      inValid: []
+      valid: [
+        '1-1111111-1',
+        '1+1111111+1',
+        '1.1111111.1',
+        '1A1111111A1'
+      ],
+      inValid: [
+        '111111111',
+        '11111111-1',
+        '1-11111111'
+      ]
     }
   },
   {
     code: 'IN',
     name: 'India',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -600,7 +706,7 @@ const specification = [
     code: 'IQ',
     name: 'Iraq',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -610,7 +716,7 @@ const specification = [
     code: 'IR',
     name: 'Iran',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -630,7 +736,7 @@ const specification = [
     code: 'JP',
     name: 'Japan',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -672,7 +778,10 @@ const specification = [
     format: 'YYMMDDNNNNNN',
     identifier: 'ID number',
     examples: {
-      valid: ['890101111111'],
+      valid: [
+        '890101111111',
+        '000101111111'
+      ],
       inValid: []
     }
   },
@@ -680,7 +789,7 @@ const specification = [
     code: 'LB',
     name: 'Lebanon',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -690,7 +799,7 @@ const specification = [
     code: 'MA',
     name: 'Morocco',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -722,25 +831,36 @@ const specification = [
     format: 'DDMMYYYNNNNNN',
     identifier: 'Unique Master Citizen Number',
     examples: {
-      valid: ['0101989111111'],
+      valid: [
+        '0101989111111',
+        '0101000111111'
+      ],
       inValid: []
     }
   },
   {
     code: 'MN',
     name: 'Mongolia',
-    format: 'LBLBBNNNNNNNN',
+    format: 'LLLBNNNNNNNN or LBLBBNNNNNNNN',
     identifier: 'Personal number',
     examples: {
-      valid: ['A A  11111111'],
-      inValid: []
+      valid: [
+        'AAA 11111111',
+        'A A  11111111'
+      ],
+      inValid: [
+        'AAA11111111',
+        'AA11111111',
+        'A A11111111',
+        'A A 11111111',
+      ]
     }
   },
   {
     code: 'MX',
     name: 'Mexico',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -752,7 +872,10 @@ const specification = [
     format: 'YYMMDDNNNNNN',
     identifier: 'Identity number',
     examples: {
-      valid: ['890101111111'],
+      valid: [
+        '890101111111',
+        '000101111111'
+      ],
       inValid: []
     }
   },
@@ -760,7 +883,7 @@ const specification = [
     code: 'NG',
     name: 'Nigeria',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -770,7 +893,7 @@ const specification = [
     code: 'NZ',
     name: 'New Zealand',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -782,8 +905,17 @@ const specification = [
     format: 'NXNNNXNNN',
     identifier: 'Personal number',
     examples: {
-      valid: ['1-111-111'],
-      inValid: []
+      valid: [
+        '1-111-111',
+        '1+111+111',
+        '1.111.111',
+        '1A111A111'
+      ],
+      inValid: [
+        '1111-111',
+        '1-111111',
+        '1111111',
+      ]
     }
   },
   {
@@ -800,7 +932,7 @@ const specification = [
     code: 'PH',
     name: 'Philippines',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -810,7 +942,7 @@ const specification = [
     code: 'PK',
     name: 'Pakistan',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -840,7 +972,7 @@ const specification = [
     code: 'RU',
     name: 'Russia',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -850,7 +982,7 @@ const specification = [
     code: 'RW',
     name: 'Rwanda',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -870,7 +1002,7 @@ const specification = [
     code: 'SY',
     name: 'Syrian Arab Republic (Syria)',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -912,15 +1044,20 @@ const specification = [
     format: 'NNNNNNNNNN or NNNNNNNN-NNNNN',
     identifier: 'Personal or record number',
     examples: {
-      valid: ['1111111111-1111'],
-      inValid: []
+      valid: [
+        '1111111111',
+        '11111111-1111'
+      ],
+      inValid: [
+        '111111111111'
+      ]
     }
   },
   {
     code: 'US',
     name: 'United States of America',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -932,15 +1069,28 @@ const specification = [
     format: 'NNXNNNXNNNXN',
     identifier: 'Personal number',
     examples: {
-      valid: ['11-111-111-1'],
-      inValid: []
+      valid: [
+        '11-111-111-1',
+        '11+111+111+1',
+        '11.111.111.1',
+        '11A111A111A1'
+      ],
+      inValid: [
+        '111111111',
+        '11111-111-1',
+        '11-111-1111',
+        '11111111-1',
+        '11-1111111',
+        '11111-1111',
+        '11-111111-1'
+      ]
     }
   },
   {
     code: 'UZ',
     name: 'Uzbekistan',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -952,7 +1102,10 @@ const specification = [
     format: 'NNNNNNN or NNNNNNNN',
     identifier: 'Personal number',
     examples: {
-      valid: ['1111111'],
+      valid: [
+        '1111111',
+        '11111111'
+      ],
       inValid: []
     }
   },
@@ -960,7 +1113,7 @@ const specification = [
     code: 'VN',
     name: 'Viet Nam',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -970,7 +1123,7 @@ const specification = [
     code: 'YE',
     name: 'Yemen',
     format: defaultFormat,
-    identifier: defaultIdentifier,
+    identifier: defaultPassportIdentifier,
     examples: {
       valid: [defaultExample],
       inValid: []
@@ -982,7 +1135,10 @@ const specification = [
     format: 'YYMMDDNNNNNNN',
     identifier: 'Identity number',
     examples: {
-      valid: ['8901011111111'],
+      valid: [
+        '8901011111111',
+        '0001011111111'
+      ],
       inValid: []
     }
   },
