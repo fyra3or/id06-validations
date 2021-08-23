@@ -2,17 +2,17 @@
 
 const { test } = require('tap')
 const Fastify = require('fastify')
-const GetPersonIdRegExp = require('../../plugins/get-person-id-regexp')
+const GetIdentifierRegExp = require('../../plugins/get-identifier-regexp')
 
 test('required params', async (t) => {
   const fastify = Fastify()
-  fastify.register(GetPersonIdRegExp)
+  fastify.register(GetIdentifierRegExp)
 
   await fastify.ready()
 
   t.throws(() => {
-    fastify.getPersonIdRegExp({})
+    fastify.getIdentifierRegExp({})
   }, {
-    message: 'countryCode is required in getPersonIdRegexp'
+    message: 'countryCode is required in getIdentifierRegExp'
   }, 'Expected error was thrown')
 })

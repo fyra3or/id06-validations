@@ -9,9 +9,9 @@ const monthMatch = '(0[1-9]|1[012])';
 const dayMatch = '(0[1-9]|[12][0-9]|3[01])';
 
 module.exports = fp(async function (fastify, opts) {
-  fastify.decorate('getPersonIdRegExp', function ({ countryCode }) {
+  fastify.decorate('getIdentifierRegExp', function ({ countryCode }) {
     if (!countryCode) {
-      throw new Error('countryCode is required in getPersonIdRegexp')
+      throw new Error('countryCode is required in getIdentifierRegExp')
     }
 
     const uppercaseCountryCode = countryCode.toUpperCase();

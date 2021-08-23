@@ -1,17 +1,17 @@
 'use strict'
 
-const countries = require('../../constants/countries')
+const specification = require('../../constants/spec-v2.3')
 
 module.exports = async function (fastify, opts) {
   fastify.route({
     method: 'GET',
-    url: '/countries',
+    url: '/specification',
     schema: {
       response: {
         200: {
           type: 'object',
           properties: {
-            countries: {
+            specification: {
               type: 'array',
               items: {
                 type: 'object',
@@ -31,7 +31,7 @@ module.exports = async function (fastify, opts) {
     },
     handler: async (request, reply) => {
       return {
-        countries
+        specification
       }
     }
   })

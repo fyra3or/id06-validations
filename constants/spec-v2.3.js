@@ -2,7 +2,7 @@ const defaultFormat = 'N/A';
 const defaultLabel = 'Document number from the passport';
 const defaultExample = '123456789';
 
-const countries = [
+const specification = [
   // EU / ESS
   {
     code: 'AT',
@@ -792,4 +792,4 @@ const countries = [
   },
 ];
 
-module.exports = countries
+module.exports = specification
