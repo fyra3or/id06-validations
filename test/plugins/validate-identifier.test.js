@@ -16,14 +16,14 @@ test('validate full specification', async (t) => {
   specification.forEach((country) => {
     const countryCode = country.code;
 
-    if (country.validExamples.length) {
-      country.validExamples.forEach((identifier) => {
+    if (country.examples.valid.length) {
+      country.examples.valid.forEach((identifier) => {
         t.ok(fastify.validateIdentifier({ identifier, countryCode }), `${country.name}: ${identifier} should be valid`)
       })
     }
 
-    if (country.notValidExamples.length) {
-      country.notValidExamples.forEach((identifier) => {
+    if (country.examples.inValid.length) {
+      country.examples.inValid.forEach((identifier) => {
         t.notOk(fastify.validateIdentifier({ identifier, countryCode }), `${country.name}: ${identifier} should not be valid`)
       })
     }

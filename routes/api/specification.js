@@ -19,9 +19,14 @@ module.exports = async function (fastify, opts) {
                   code: { type: 'string' },
                   name: { type: 'string' },
                   format: { type: 'string' },
-                  description: { type: 'string' },
-                  validExamples: { type: 'array' },
-                  notValidExamples: { type: 'array' },
+                  identifier: { type: 'string' },
+                  examples: {
+                    type: 'object',
+                    properties: {
+                      valid: { type: 'array' },
+                      inValid: { type: 'array' },
+                    }
+                  }
                 }
               }
             },

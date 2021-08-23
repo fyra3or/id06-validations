@@ -48,7 +48,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Code</th>
                 <th scope="col">Format</th>
-                <th scope="col">Description</th>
+                <th scope="col">Identifier</th>
                 <th scope="col">Examples</th>
               </tr>
             </thead>
@@ -101,8 +101,8 @@
           content += `<th scope="row">${item.name}</th>`;
           content += `<td>${item.code}</td>`;
           content += `<td>${item.format}</td>`;
-          content += `<td>${item.description}</td>`;
-          content += `<td>${item.validExamples.join("<br>")}</td>`;
+          content += `<td>${item.identifier}</td>`;
+          content += `<td>${item.examples.valid.join("<br>")}</td>`;
           content += '</tr>';
 
           return content;

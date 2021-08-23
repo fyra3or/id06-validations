@@ -1,5 +1,5 @@
 const defaultFormat = 'N/A';
-const defaultLabel = 'Document number from the passport';
+const defaultIdentifier = 'Document number from the passport';
 const defaultExample = '123456789';
 
 const specification = [
@@ -8,257 +8,321 @@ const specification = [
     code: 'AT',
     name: 'Austria',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'BE',
     name: 'Belgium',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'BG',
     name: 'Bulgaria',
     format: 'YYMMDDNNNN',
-    description: 'Edinen grazhdanski nomer',
-    validExamples: ['8901011111'],
-    notValidExamples: []
+    identifier: 'Edinen grazhdanski nomer',
+    examples: {
+      valid: ['8901011111'],
+      inValid: []
+    }
   },
   {
     code: 'CH',
     name: 'Switzerland',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'CY',
     name: 'Cyprus',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'CZ',
     name: 'Czech Republic',
     format: 'YYNNDD/NNN or YYNNDD/NNNN',
-    description: 'Rodné číslo',
-    validExamples: ['897701/111'],
-    notValidExamples: []
+    identifier: 'Rodné číslo',
+    examples: {
+      valid: ['897701/111'],
+      inValid: []
+    }
   },
   {
     code: 'DE',
     name: 'Germany',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'DK',
     name: 'Denmark',
     format: 'NNNNNN-NNNN',
-    description: 'Personnummer(CPR-nummer, det centrale personregister)',
-    validExamples: ['111111-1111'],
-    notValidExamples: []
+    identifier: 'Personnummer(CPR-nummer, det centrale personregister)',
+    examples: {
+      valid: ['111111-1111'],
+      inValid: []
+    }
   },
   {
     code: 'EE',
     name: 'Estonia',
     format: 'NYYMMDDNNNN',
-    description: 'Isikukood',
-    validExamples: ['18901011111'],
-    notValidExamples: []
+    identifier: 'Isikukood',
+    examples: {
+      valid: ['18901011111'],
+      inValid: []
+    }
   },
   {
     code: 'ES',
     name: 'Spain',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'FI',
     name: 'Finland',
     format: 'DDMMYYXNNNZ',
-    description: 'Henkilötunnus/Personbeteckning',
-    validExamples: ['010189-111A'],
-    notValidExamples: []
+    identifier: 'Henkilötunnus/Personbeteckning',
+    examples: {
+      valid: ['010189-111A'],
+      inValid: []
+    }
   },
   {
     code: 'FR',
     name: 'France',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'GB',
     name: 'Great Britain',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'GR',
     name: 'Greece',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'HR',
     name: 'Croatia',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'HU',
     name: 'Hungary',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'IE',
     name: 'Ireland',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'IS',
     name: 'Iceland',
     format: 'DDMMYY-NNNN',
-    description: 'Kennitala',
-    validExamples: ['010189-1111'],
-    notValidExamples: []
+    identifier: 'Kennitala',
+    examples: {
+      valid: ['010189-1111'],
+      inValid: []
+    }
   },
   {
     code: 'IT',
     name: 'Italy',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'LI',
     name: 'Liechtenstein',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'LT',
     name: 'Lithuania',
     format: 'NYYMMDDNNNN',
-    description: 'Asmens kodas',
-    validExamples: ['18901011111'],
-    notValidExamples: []
+    identifier: 'Asmens kodas',
+    examples: {
+      valid: ['18901011111'],
+      inValid: []
+    }
   },
   {
     code: 'LU',
     name: 'Luxembourg',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'LV',
     name: 'Latvia',
     format: 'DDMMYY-NNNNN',
-    description: 'Personas kods',
-    validExamples: ['010189-11111'],
-    notValidExamples: []
+    identifier: 'Personas kods',
+    examples: {
+      valid: ['010189-11111'],
+      inValid: []
+    }
   },
   {
     code: 'MT',
     name: 'Malta',
     format: 'NNNNNNNL',
-    description: 'ID number from the passport',
-    validExamples: ['1111111A'],
-    notValidExamples: []
+    identifier: 'ID number from the passport',
+    examples: {
+      valid: ['1111111A'],
+      inValid: []
+    }
   },
   {
     code: 'NL',
     name: 'Netherlands',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'NO',
     name: 'Norway',
     format: 'DDMMYYNNNNN',
-    description: 'Fødelsenummer',
-    validExamples: ['01018911111'],
-    notValidExamples: []
+    identifier: 'Fødelsenummer',
+    examples: {
+      valid: ['01018911111'],
+      inValid: []
+    }
   },
   {
     code: 'PL',
     name: 'Poland',
     format: 'YYNNDDNNNNN',
-    description: 'Powszechny elektroniczny system ewidencji ludności',
-    validExamples: ['89770111111'],
-    notValidExamples: []
+    identifier: 'Powszechny elektroniczny system ewidencji ludności',
+    examples: {
+      valid: ['89770111111'],
+      inValid: []
+    }
   },
   {
     code: 'PT',
     name: 'Portugal',
     format: 'NNNNNNN or NNNNNNNN or LLNNNNNNNN',
-    description: 'Número de identificação civil',
-    validExamples: ['1111111'],
-    notValidExamples: []
+    identifier: 'Número de identificação civil',
+    examples: {
+      valid: ['1111111'],
+      inValid: []
+    }
   },
   {
     code: 'RO',
     name: 'Romania',
     format: 'YYMMDDNNNNNN',
-    description: 'Cod numeric personal',
-    validExamples: ['890101111111'],
-    notValidExamples: []
+    identifier: 'Cod numeric personal',
+    examples: {
+      valid: ['890101111111'],
+      inValid: []
+    }
   },
   {
     code: 'SE',
     name: 'Sweden',
     format: 'YYYYMMDD-NNNN',
-    description: 'Personnummer',
-    validExamples: ['19890101-1111'],
-    notValidExamples: ['890101-1111']
+    identifier: 'Personnummer',
+    examples: {
+      valid: ['19890101-1111'],
+      inValid: ['890101-1111']
+    }
   },
   {
     code: 'SI',
     name: 'Slovenia',
     format: 'DDMMYYYNNNNNN',
-    description: 'Enotna matična številka občana',
-    validExamples: ['0101989111111'],
-    notValidExamples: []
+    identifier: 'Enotna matična številka občana',
+    examples: {
+      valid: ['0101989111111'],
+      inValid: []
+    }
   },
   {
     code: 'SK',
     name: 'Slovakia',
     format: 'YYNNDD/NNN or YYNNDD/NNNN',
-    description: 'Rodné číslo',
-    validExamples: ['897701/111'],
-    notValidExamples: []
+    identifier: 'Rodné číslo',
+    examples: {
+      valid: ['897701/111'],
+      inValid: []
+    }
   },
 
   // Outside EU / ESS
@@ -266,529 +330,661 @@ const specification = [
     code: 'AE',
     name: 'United Arab Emirates',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'AF',
     name: 'Afghanistan',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'AL',
     name: 'Albania',
     format: 'LNNNNNNNNL',
-    description: 'Numri i identitetit',
-    validExamples: ['A11111111A'],
-    notValidExamples: []
+    identifier: 'Numri i identitetit',
+    examples: {
+      valid: ['A11111111A'],
+      inValid: []
+    }
   },
   {
     code: 'AR',
     name: 'Argentina',
     format: 'NNNNNNNN',
-    description: 'Personal number',
-    validExamples: ['11111111'],
-    notValidExamples: []
+    identifier: 'Personal number',
+    examples: {
+      valid: ['11111111'],
+      inValid: []
+    }
   },
   {
     code: 'AU',
     name: 'Australia',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'AZ',
     name: 'Azerbaijan',
     format: 'NLNLNLL or NNLLLLNL',
-    description: 'Personal number',
-    validExamples: ['1A1A1AA'],
-    notValidExamples: []
+    identifier: 'Personal number',
+    examples: {
+      valid: ['1A1A1AA'],
+      inValid: []
+    }
   },
   {
     code: 'BA',
     name: 'Bosnia and Herzegovina',
     format: 'NNNNNNNNNNNNN',
-    description: 'Jedinstveni matični broj građana',
-    validExamples: ['1111111111111'],
-    notValidExamples: []
+    identifier: 'Jedinstveni matični broj građana',
+    examples: {
+      valid: ['1111111111111'],
+      inValid: []
+    }
   },
   {
     code: 'BR',
     name: 'Brazil',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'BY',
     name: 'Belarus',
     format: 'NNNNNNNLNNNLLN',
-    description: 'Identification number',
-    validExamples: ['1111111A111AA1'],
-    notValidExamples: []
+    identifier: 'Identification number',
+    examples: {
+      valid: ['1111111A111AA1'],
+      inValid: []
+    }
   },
   {
     code: 'CA',
     name: 'Canada',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'CI',
     name: 'Côte d\'Ivoire',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'CL',
     name: 'Chile',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'CM',
     name: 'Cameroon',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'CN',
     name: 'China',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'CO',
     name: 'Colombia',
     format: 'LLNNNNNNN, LLNNNNNNNN or LLNNNNNNNNN',
-    description: 'Personal number',
-    validExamples: ['AA11111111'],
-    notValidExamples: []
+    identifier: 'Personal number',
+    examples: {
+      valid: ['AA11111111'],
+      inValid: []
+    }
   },
   {
     code: 'CR',
     name: 'Costa Rica',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'DO',
     name: 'Dominican Republic',
     format: 'NNNXNNNNNNNXN',
-    description: 'Personal number',
-    validExamples: ['111-1111111-1'],
-    notValidExamples: []
+    identifier: 'Personal number',
+    examples: {
+      valid: ['111-1111111-1'],
+      inValid: []
+    }
   },
   {
     code: 'DZ',
     name: 'Algeria',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'EC',
     name: 'Ecuador',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'EG',
     name: 'Egypt',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'ER',
     name: 'Eritrea',
     format: 'NNNNNNN',
-    description: 'ID number',
-    validExamples: ['1111111'],
-    notValidExamples: []
+    identifier: 'ID number',
+    examples: {
+      valid: ['1111111'],
+      inValid: []
+    }
   },
   {
     code: 'ET',
     name: 'Ethiopia',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'GE',
     name: 'Georgia',
     format: 'NNNNNNNNNNN',
-    description: 'Personal number',
-    validExamples: ['11111111111'],
-    notValidExamples: []
+    identifier: 'Personal number',
+    examples: {
+      valid: ['11111111111'],
+      inValid: []
+    }
   },
   {
     code: 'GH',
     name: 'Ghana',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'GT',
     name: 'Guatemala',
     format: 'NNNNNN',
-    description: 'ID number',
-    validExamples: ['111111'],
-    notValidExamples: []
+    identifier: 'ID number',
+    examples: {
+      valid: ['111111'],
+      inValid: []
+    }
   },
   {
     code: 'IL',
     name: 'Israel',
     format: 'NXNNNNNNNXN',
-    description: 'ID number',
-    validExamples: ['1-1111111-1'],
-    notValidExamples: []
+    identifier: 'ID number',
+    examples: {
+      valid: ['1-1111111-1'],
+      inValid: []
+    }
   },
   {
     code: 'IN',
     name: 'India',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'IQ',
     name: 'Iraq',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'IR',
     name: 'Iran',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'JO',
     name: 'Jordan',
     format: 'NNNNNNNNNN',
-    description: 'National number',
-    validExamples: ['1111111111'],
-    notValidExamples: []
+    identifier: 'National number',
+    examples: {
+      valid: ['1111111111'],
+      inValid: []
+    }
   },
   {
     code: 'JP',
     name: 'Japan',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'KGZ',
     name: 'Kyrgyzstan',
     format: 'NNNNNNNNNNNNNN',
-    description: 'Personal number',
-    validExamples: ['11111111111111'],
-    notValidExamples: []
+    identifier: 'Personal number',
+    examples: {
+      valid: ['11111111111111'],
+      inValid: []
+    }
   },
   {
     code: 'KR',
     name: 'Republic of Korea (South Korea)',
     format: 'NNNNNNN',
-    description: 'Personal number',
-    validExamples: ['1111111'],
-    notValidExamples: []
+    identifier: 'Personal number',
+    examples: {
+      valid: ['1111111'],
+      inValid: []
+    }
   },
   {
     code: 'KW',
     name: 'Kuwait',
     format: 'NNNNNNNNNNNN',
-    description: 'Civil number',
-    validExamples: ['111111111111'],
-    notValidExamples: []
+    identifier: 'Civil number',
+    examples: {
+      valid: ['111111111111'],
+      inValid: []
+    }
   },
   {
     code: 'KZ',
     name: 'Kazakhstan',
     format: 'YYMMDDNNNNNN',
-    description: 'ID number',
-    validExamples: ['890101111111'],
-    notValidExamples: []
+    identifier: 'ID number',
+    examples: {
+      valid: ['890101111111'],
+      inValid: []
+    }
   },
   {
     code: 'LB',
     name: 'Lebanon',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'MA',
     name: 'Morocco',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'MD',
     name: 'Moldavia',
     format: 'NNNNNNNNNNNNN',
-    description: 'Numarul de Identificare',
-    validExamples: ['1111111111111'],
-    notValidExamples: []
+    identifier: 'Numarul de Identificare',
+    examples: {
+      valid: ['1111111111111'],
+      inValid: []
+    }
   },
   {
     code: 'ME',
     name: 'Montenegro',
     format: 'NNNNNNNNNNNNN',
-    description: 'Jedinstveni matični broj građana',
-    validExamples: ['1111111111111'],
-    notValidExamples: []
+    identifier: 'Jedinstveni matični broj građana',
+    examples: {
+      valid: ['1111111111111'],
+      inValid: []
+    }
   },
   {
     code: 'MK',
     name: 'North Macedonia',
     format: 'DDMMYYYNNNNNN',
-    description: 'Unique Master Citizen Number',
-    validExamples: ['0101989111111'],
-    notValidExamples: []
+    identifier: 'Unique Master Citizen Number',
+    examples: {
+      valid: ['0101989111111'],
+      inValid: []
+    }
   },
   {
     code: 'MN',
     name: 'Mongolia',
     format: 'LBLBBNNNNNNNN',
-    description: 'Personal number',
-    validExamples: ['A A  11111111'],
-    notValidExamples: []
+    identifier: 'Personal number',
+    examples: {
+      valid: ['A A  11111111'],
+      inValid: []
+    }
   },
   {
     code: 'MX',
     name: 'Mexico',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'MY',
     name: 'Malaysia',
     format: 'YYMMDDNNNNNN',
-    description: 'Identity number',
-    validExamples: ['890101111111'],
-    notValidExamples: []
+    identifier: 'Identity number',
+    examples: {
+      valid: ['890101111111'],
+      inValid: []
+    }
   },
   {
     code: 'NG',
     name: 'Nigeria',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'NZ',
     name: 'New Zealand',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'PA',
     name: 'Panama',
     format: 'NXNNNXNNN',
-    description: 'Personal number',
-    validExamples: ['1-111-111'],
-    notValidExamples: []
+    identifier: 'Personal number',
+    examples: {
+      valid: ['1-111-111'],
+      inValid: []
+    }
   },
   {
     code: 'PE',
     name: 'Peru',
     format: 'NNNNNNNN',
-    description: 'National ID number',
-    validExamples: ['11111111'],
-    notValidExamples: []
+    identifier: 'National ID number',
+    examples: {
+      valid: ['11111111'],
+      inValid: []
+    }
   },
   {
     code: 'PH',
     name: 'Philippines',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'PK',
     name: 'Pakistan',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'PY',
     name: 'Paraguay',
     format: 'NNNNNNN',
-    description: 'ID number',
-    validExamples: ['1111111'],
-    notValidExamples: []
+    identifier: 'ID number',
+    examples: {
+      valid: ['1111111'],
+      inValid: []
+    }
   },
   {
     code: 'RS',
     name: 'Serbia',
     format: 'NNNNNNNNNNNNN',
-    description: 'Jedinstveni matični broj građana',
-    validExamples: ['1111111111111'],
-    notValidExamples: []
+    identifier: 'Jedinstveni matični broj građana',
+    examples: {
+      valid: ['1111111111111'],
+      inValid: []
+    }
   },
   {
     code: 'RU',
     name: 'Russia',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'RW',
     name: 'Rwanda',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'SG',
     name: 'Singapore',
     format: 'LNNNNNNNL',
-    description: 'National ID number',
-    validExamples: ['A1111111A'],
-    notValidExamples: []
+    identifier: 'National ID number',
+    examples: {
+      valid: ['A1111111A'],
+      inValid: []
+    }
   },
   {
     code: 'SY',
     name: 'Syrian Arab Republic (Syria)',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'TH',
     name: 'Thailand',
     format: 'NNNNNNNNNNNNN',
-    description: 'Identification number',
-    validExamples: ['1111111111111'],
-    notValidExamples: []
+    identifier: 'Identification number',
+    examples: {
+      valid: ['1111111111111'],
+      inValid: []
+    }
   },
   {
     code: 'TR',
     name: 'Turkey',
     format: 'NNNNNNNNNNN',
-    description: 'Türkiye Cumhuriyeti Kimlik Numarası',
-    validExamples: ['11111111111'],
-    notValidExamples: []
+    identifier: 'Türkiye Cumhuriyeti Kimlik Numarası',
+    examples: {
+      valid: ['11111111111'],
+      inValid: []
+    }
   },
   {
     code: 'TW',
     name: 'Taiwan',
     format: 'LNNNNNNNNN',
-    description: 'Personal ID number',
-    validExamples: ['A111111111'],
-    notValidExamples: []
+    identifier: 'Personal ID number',
+    examples: {
+      valid: ['A111111111'],
+      inValid: []
+    }
   },
   {
     code: 'UA',
     name: 'Ukraine',
     format: 'NNNNNNNNNN or NNNNNNNN-NNNNN',
-    description: 'Personal or record number',
-    validExamples: ['1111111111-1111'],
-    notValidExamples: []
+    identifier: 'Personal or record number',
+    examples: {
+      valid: ['1111111111-1111'],
+      inValid: []
+    }
   },
   {
     code: 'US',
     name: 'United States of America',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'UY',
     name: 'Uruguay',
     format: 'NNXNNNXNNNXN',
-    description: 'Personal number',
-    validExamples: ['11-111-111-1'],
-    notValidExamples: []
+    identifier: 'Personal number',
+    examples: {
+      valid: ['11-111-111-1'],
+      inValid: []
+    }
   },
   {
     code: 'UZ',
     name: 'Uzbekistan',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'VE',
     name: 'Venezuela',
     format: 'NNNNNNN or NNNNNNNN',
-    description: 'Personal number',
-    validExamples: ['1111111'],
-    notValidExamples: []
+    identifier: 'Personal number',
+    examples: {
+      valid: ['1111111'],
+      inValid: []
+    }
   },
   {
     code: 'VN',
     name: 'Viet Nam',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'YE',
     name: 'Yemen',
     format: defaultFormat,
-    description: defaultLabel,
-    validExamples: [defaultExample],
-    notValidExamples: []
+    identifier: defaultIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
   },
   {
     code: 'ZA',
     name: 'South Africa',
     format: 'YYMMDDNNNNNNN',
-    description: 'Identity number',
-    validExamples: ['8901011111111'],
-    notValidExamples: []
+    identifier: 'Identity number',
+    examples: {
+      valid: ['8901011111111'],
+      inValid: []
+    }
   },
 ];
 
