@@ -33,7 +33,7 @@ module.exports = fp(async function (fastify, opts) {
       case 'LT':
         return new RegExp(String.raw`^\d${yearMatchTwoDigits}${monthMatch}${dayMatch}\d{4}$`);
       case 'LV':
-        return new RegExp(String.raw`^${dayMatch}${monthMatch}${yearMatchTwoDigits}-\d{5}$`);
+        return new RegExp(String.raw`^(32|${dayMatch})${monthMatch}${yearMatchTwoDigits}-\d{5}$`);
       case 'MT':
         return new RegExp(String.raw`^\d{7}[A-Za-z]$`);
       case 'NO':
@@ -43,9 +43,9 @@ module.exports = fp(async function (fastify, opts) {
       case 'PT':
         return new RegExp(String.raw`^\d{7,8}|[A-Za-z]{2}\d{8}$`);
       case 'RO':
-        return new RegExp(String.raw`^${yearMatchTwoDigits}${monthMatch}${dayMatch}\d{6}$`);
+        return new RegExp(String.raw`^\d${yearMatchTwoDigits}${monthMatch}${dayMatch}\d{6}$`);
       case 'SE':
-        return new RegExp(String.raw`^${yearMatch}${monthMatch}${dayMatch}[-|+]{0,1}\d{4}$`);
+        return new RegExp(String.raw`^${yearMatch}${monthMatch}${dayMatch}-\d{4}$`);
       case 'SI':
         return new RegExp(String.raw`^${dayMatch}${monthMatch}${yearMatchThreeDigits}\d{6}$`);
       case 'SK':
@@ -57,13 +57,13 @@ module.exports = fp(async function (fastify, opts) {
       case 'AR':
         return new RegExp(String.raw`^\d{8}$`);
       case 'AZ':
-        return new RegExp(String.raw`^(\d[a-zA-z]\d[a-zA-z]\d[a-zA-z]{2})|(\d{2}[a-zA-z]{4}\d[a-zA-z])$`);
+        return new RegExp(String.raw`^(\d[a-zA-z]\d[a-zA-z]\d[a-zA-z]{2})|(\d{2}[a-zA-z]{4}\d[a-zA-z])|(\d[a-zA-z]{5}\d)|(\d{2}[a-zA-z]{4}\d)$`);
       case 'BA':
         return new RegExp(String.raw`^\d{13}$`);
       case 'BY':
         return new RegExp(String.raw`^\d{7}[a-zA-z]\d{3}[a-zA-z]{2}\d$`);
       case 'CO':
-        return new RegExp(String.raw`^[a-zA-z]{2}\d{7,9}$`);
+        return new RegExp(String.raw`^[a-zA-z]{2}\d{7,10}$`);
       case 'DO':
         return new RegExp(String.raw`^\d{3}[-,+,.,A]\d{7}[-,+,.,A]\d$`);
       case 'ER':
@@ -91,7 +91,7 @@ module.exports = fp(async function (fastify, opts) {
       case 'MK':
         return new RegExp(String.raw`^${dayMatch}${monthMatch}${yearMatchThreeDigits}\d{6}$`);
       case 'MN':
-        return new RegExp(String.raw`^[a-zA-Z]\s[a-zA-Z]\s{2}\d{8}$`);
+        return new RegExp(String.raw`^([a-zA-Z]\s[a-zA-Z]\s{2}\d{8})|([a-zA-Z]{3}\s\d{8})$`);
       case 'MY':
         return new RegExp(String.raw`^${yearMatchTwoDigits}${monthMatch}${dayMatch}\d{6}$`);
       case 'PA':
@@ -111,7 +111,7 @@ module.exports = fp(async function (fastify, opts) {
       case 'TW':
         return new RegExp(String.raw`^[a-zA-Z]\d{9}$`);
       case 'UA':
-        return new RegExp(String.raw`^(\d{10})|(\d{10}-\d{4})$`);
+        return new RegExp(String.raw`^((\d{10})|(\d{8}-\d{5}))$`);
       case 'UY':
         return new RegExp(String.raw`^\d{2}[-,+,.,A]\d{3}[-,+,.,A]\d{3}[-,+,.,A]\d$`);
       case 'VE':
