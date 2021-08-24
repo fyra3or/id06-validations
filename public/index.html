@@ -89,6 +89,7 @@
           const optionEl = document.createElement('option');
           optionEl.value = item.code;
           optionEl.text = item.name;
+          optionEl.selected = item.code === 'SE';
           selectEl.add(optionEl, null);
         });
       }
