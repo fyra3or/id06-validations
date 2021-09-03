@@ -45,7 +45,10 @@ module.exports = fp(async function (fastify, opts) {
       case 'RO':
         return new RegExp(String.raw`^\d${yearMatchTwoDigits}${monthMatch}${dayMatch}\d{6}$`);
       case 'SE':
-        return new RegExp(String.raw`^${yearMatch}${monthMatch}${dayMatch}-\d{4}$`);
+        // NOTE: According to the specification, a single hyphen is required before the
+        // last 4 digits. Our implementation is less strict, allowing a single hyphen, a single plus,
+        // or no character at all.
+        return new RegExp(String.raw`^${yearMatch}${monthMatch}${dayMatch}[-|+]{0,1}\d{4}$`);
       case 'SI':
         return new RegExp(String.raw`^${dayMatch}${monthMatch}${yearMatchThreeDigits}\d{6}$`);
       case 'SK':
