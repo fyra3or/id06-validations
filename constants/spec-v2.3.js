@@ -232,16 +232,6 @@ const specification = [
     }
   },
   {
-    code: 'LI',
-    name: 'Liechtenstein',
-    format: defaultFormat,
-    identifier: 'No verifiable document at the moment',
-    examples: {
-      valid: [defaultExample],
-      inValid: []
-    }
-  },
-  {
     code: 'LT',
     name: 'Lithuania',
     format: 'NYYMMDDNNNN',
@@ -1147,8 +1137,19 @@ const specification = [
     }
   },
 
-  // Manual control of documentation from countries outside of EU/EES
   // Individuals with documentation from the following countries, need to have their document manually checked
+  {
+    code: 'LI',
+    name: 'Liechtenstein',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+
+  // Manual control of documentation from countries outside of EU/EES
   {
     code: 'AD',
     name: 'Andorra',
@@ -1582,16 +1583,6 @@ const specification = [
   {
     code: 'LC',
     name: 'Saint Lucia',
-    format: defaultFormat,
-    identifier: defaultPassportIdentifier,
-    examples: {
-      valid: [defaultExample],
-      inValid: []
-    }
-  },
-  {
-    code: 'LI',
-    name: 'Liechtenstein',
     format: defaultFormat,
     identifier: defaultPassportIdentifier,
     examples: {
