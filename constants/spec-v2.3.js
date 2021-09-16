@@ -1146,6 +1146,999 @@ const specification = [
       inValid: []
     }
   },
+
+  // Manual control of documentation from countries outside of EU/EES
+  // Individuals with documentation from the following countries, need to have their document manually checked
+  {
+    code: 'AD',
+    name: 'Andorra',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'AG',
+    name: 'Antigua and Barbuda',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'AM',
+    name: 'Armenia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'AO',
+    name: 'Angola',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BB',
+    name: 'Barbados',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BD',
+    name: 'Bangladesh',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BF',
+    name: 'Burkina Faso',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BH',
+    name: 'Bahrain',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BI',
+    name: 'Burundi',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BJ',
+    name: 'Benin',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BN',
+    name: 'Brunei Darussalam',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BO',
+    name: 'Bolivia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BS',
+    name: 'Bahamas',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BT',
+    name: 'Bhutan',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BW',
+    name: 'Botswana',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'BZ',
+    name: 'Belize',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'CD',
+    name: 'Congo, Democratic Republic of the',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'CF',
+    name: 'Central African Republic',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'CG',
+    name: 'Congo',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'CU',
+    name: 'Cuba',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'CV',
+    name: 'Cabo Verde',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'DJ',
+    name: 'Djibouti',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'DM',
+    name: 'Dominica',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'FJ',
+    name: 'Fiji',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'FM',
+    name: 'Micronesia, Federated States of',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'GA',
+    name: 'Gabon',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'GD',
+    name: 'Grenada',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'GM',
+    name: 'Gambia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'GN',
+    name: 'Guinea',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'GQ',
+    name: 'Equatorial Guinea',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'GW',
+    name: 'Guinea - Bissau',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'GY',
+    name: 'Guyana',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'HN',
+    name: 'Honduras',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'HT',
+    name: 'Haiti',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'ID',
+    name: 'Indonesia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'JM',
+    name: 'Jamaica',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'KE',
+    name: 'Kenya',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'KH',
+    name: 'Cambodia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'KI',
+    name: 'Kiribati',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'KM',
+    name: 'Comoros',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'KN',
+    name: 'Saint Kitts and Nevis',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'KP',
+    name: 'Korea, Democratic People’s Republic of',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'LA',
+    name: 'Laos',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'LC',
+    name: 'Saint Lucia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'LI',
+    name: 'Liechtenstein',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'LK',
+    name: 'Sri Lanka',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'LR',
+    name: 'Liberia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'LS',
+    name: 'Lesotho',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'LY',
+    name: 'Libya',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'MC',
+    name: 'Monaco',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'MG',
+    name: 'Madagascar',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'MH',
+    name: 'Marshall Islands',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'ML',
+    name: 'Mali',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'MM',
+    name: 'Myanmar',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'MR',
+    name: 'Mauritania',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'MU',
+    name: 'Mauritius',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'MV',
+    name: 'Maldives',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'MW',
+    name: 'Malawi',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'MZ',
+    name: 'Mozambique',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'NA',
+    name: 'Namibia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'NE',
+    name: 'Niger',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'NI',
+    name: 'Nicaragua',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'NP',
+    name: 'Nepal',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'NR',
+    name: 'Nauru',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'OM',
+    name: 'Oman',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'PG',
+    name: 'Papua New Guinea',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'PS',
+    name: 'Palestinian Territory',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'PW',
+    name: 'Palau',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'QA',
+    name: 'Qatar',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SA',
+    name: 'Saudi Arabia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SB',
+    name: 'Solomon Islands',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SC',
+    name: 'Seychelles',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SD',
+    name: 'Sudan',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SL',
+    name: 'Sierra Leone',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SM',
+    name: 'San Marino',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SN',
+    name: 'Senegal',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SO',
+    name: 'Somalia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SR',
+    name: 'Suriname',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SS',
+    name: 'South Sudan',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'ST',
+    name: 'Sao Tome and Principe',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SV',
+    name: 'El Salvador',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'SZ',
+    name: 'Eswatini',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'TD',
+    name: 'Chad',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'TG',
+    name: 'Togo',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'TJ',
+    name: 'Tajikistan',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'TL',
+    name: 'Timor - Leste',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'TM',
+    name: 'Turkmenistan',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'TN',
+    name: 'Tunisia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'TO',
+    name: 'Tonga',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'TT',
+    name: 'Trinidad and Tobago',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'TV',
+    name: 'Tuvalu',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'TZ',
+    name: 'Tanzania, United Republic of',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'UG',
+    name: 'Uganda',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'VC',
+    name: 'Saint Vincent and the Grenadines',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'VU',
+    name: 'Vanuatu',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'WS',
+    name: 'Samoa',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'XK',
+    name: 'Kosovo',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'ZM',
+    name: 'Zambia',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  },
+  {
+    code: 'ZW',
+    name: 'Zimbabwe',
+    format: defaultFormat,
+    identifier: defaultPassportIdentifier,
+    examples: {
+      valid: [defaultExample],
+      inValid: []
+    }
+  }
 ];
 
 module.exports = specification
